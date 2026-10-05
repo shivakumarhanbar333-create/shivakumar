@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Exercise: Semantic HTML Layout</title>
+
+  <style>
+    /* Basic Layout Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    header, nav, main, section, article, aside, footer {
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #ffffff;
+    }
+
+    /* Header & Nav */
+    header {
+      background-color: #d1ecf1;
+    }
+
+    nav {
+      background-color: #e2e3e5;
+    }
+
+    nav a {
+      margin-right: 15px;
+    }
+
+    /* Normal block layout — no Flexbox */
+    .container {
+      /* No display: flex */
+    }
+
+    main {
+      background-color: #fff3cd;
+    }
+
+    aside {
+      background-color: #d4edda;
+    }
+
+    section {
+      background-color: #ffffff;
+    }
+
+    article {
+      background-color: #f8d7da;
+    }
+
+    footer {
+      background-color: #e2e3e5;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. HEADER: Contains the website title -->
+  <header>
+    <h1>Student Portal</h1>
+    <p>Welcome to the Web Designing Lab</p>
+
+    <!-- 2. NAV: Navigation links -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#topics">Topics</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- CONTAINER: Normal block layout -->
+  <div class="container">
+
+    <!-- 3. MAIN: Primary content of the page -->
+    <main>
+
+      <!-- 4. SECTION: Groups related content together -->
+      <section id="topics">
+        <h2>Module 1: HTML Basics</h2>
+
+        <p>
+          In this session, we are learning how to structure
+          a webpage using semantic HTML5 elements.
+        </p>
+
+        <!-- 5. ARTICLE: Independent, self-contained content -->
+        <article>
+          <h3>What is Semantic HTML?</h3>
+          <p>
+            Semantic tags describe their meaning to both the
+            browser and the developer
+            (e.g., <code>&lt;header&gt;</code>,
+            <code>&lt;footer&gt;</code>).
+          </p>
+        </article>
+
+        <article>
+          <h3>Why use Semantic HTML?</h3>
+          <p>
+            It improves code readability, helps SEO,
+            and makes webpages accessible for screen readers.
+          </p>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- 6. ASIDE: Sidebar with extra/related information -->
+    <aside>
+      <h3>Lab Resources</h3>
+
+      <ul>
+        <li><a href="#">HTML Cheatsheet</a></li>
+        <li><a href="#">Lab Syllabus</a></li>
+        <li><a href="#">Submit Assignment</a></li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <!-- 7. FOOTER: Bottom section with copyright/credits -->
+  <footer>
+    <p>&copy; 2026 Web Designing Lab. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
